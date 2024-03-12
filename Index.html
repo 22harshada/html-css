@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    .container {
+        height:150vh;
+        width: 500px;
+        margin: auto;
+    }
+
+    .chat {
+        display: flex;
+        flex-direction: column;
+        height: 104vh;
+        background: #f1f0e8;
+    }
+
+    .chat-header {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .profile {
+        width: 100%;
+        background: #056a45;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding: 0px 10px;
+        position: relative;
+
+    }
+
+    .profile .pp {
+        width: 50px;
+        display: inline-block;
+        border-radius: 50%;
+        margin-left: 32px;
+    }
+
+    .profile #arrow {
+        display: inline-block;
+        width: 30px;
+        position: absolute;
+        top: 19px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .profile h2 {
+        display: inline-block;
+        line-height: 60px;
+        vertical-align: bottom;
+        color: #ffff;
+        font-size: 20px;
+    }
+
+    .profile span {
+        color: #ccc;
+        position: absolute;
+        top: 42px;
+        left: 100px;
+        font-size: 14px;
+    }
+    .right{
+        display: flex;
+    }
+
+    .right li{
+        display: inline-block;
+        list-style: none;
+        color: white;
+        display: flex;
+        margin-left: 15px;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+    .profile .left {
+        flex: 1;
+    }
+
+    .char-box {
+        flex: 1;
+    }
+
+    .chat-footer {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        border-radius: 100px;
+        position: relative;
+        cursor: pointer;
+
+    }
+
+    .chat-footer textarea{
+        flex: 1;
+        width: 200%;
+        border-radius: 90px;
+        margin-top:80%;
+        padding: 10px;
+        height:50px;
+        outline: none;
+        font-size: 19px;
+        padding-left: 40px;
+        padding-right: 90px;
+        border: 2px solid white;
+        color: #555;
+        resize: none;
+        
+    }
+    .chat-footer #mic{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 230px;
+        height: 80px;
+        left: 10px;
+    }
+    #mic i{
+        height:120px;
+        width: 200px;
+    }
+
+    .chat-footer #emo{
+        display: block;
+        width: 40px;
+        position:relative;
+        right: 390px;
+        top:200px;
+    }
+    .chat-footer .icons{
+        align-items: center;
+        position: absolute;
+        left:260px;
+        top:12px;
+    }
+    .icons{
+        margin-right:0px;
+        padding:5px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .chat-footer .icons i{
+        display: inline-block;
+        width:55px;
+        height:35px;
+        position: relative;
+        top:390px;
+        left: 5px;
+        padding:5px;
+        /* margin-left: 5px; */
+    }  
+    .chat-box{
+        /* border: 1px solid black; */
+        display: flex; 
+        margin: 0px;
+        padding:10px;
+       
+    }  
+    .harshada{
+        align-items: right;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <div class="chat">
+            <div class="chat-header">
+                <div class="profile">
+                    <div class="left">
+                        <i class="fa-solid fa-arrow-left" id="arrow"></i>
+                        <img src="./images/profile.png" class="pp">
+                        <h2>Harshada</h2>
+                        <span>Online</span>
+                    </div>
+                    <ul class="right">
+                       <li><i class="fa-solid fa-video"></i></li>
+                      <li><i class="fa-solid fa-phone"></i></li>
+                        <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                        <!-- <img src="./image/" alt=""> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="chat-box"><br>
+                    <p class="parimal">hello Harshada</p>
+                    <p class="harshada">hello bolo</p>
+            </div>
+
+            <div class="chat-footer">
+                <textarea placeholder="Type a message"></textarea>
+                <i class="fa-regular fa-face-laugh" id="emo"></i>
+
+                <div class="icons">
+                  <a href="">  <i class="fa-solid fa-paperclip"></i></a>
+                   <a href=""> <i class="fa-solid fa-indian-rupee-sign"></i></a>
+                    <a href=""> <i class="fa-solid fa-camera"></i></a>
+                </div>
+                <i class="fa-solid fa-microphone" id="mic"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

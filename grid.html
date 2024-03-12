@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        height:100vh;
+        width:100vw;
+    }
+    .container{
+    height: 100%;
+    width:100%;
+    display:grid;
+    padding:4rem;
+    gap: 1rem;
+    /* grid-template-rows: 100px 100px; */
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        /* grid-template-rows: repeat(4,1fr); */
+    /* grid-template-columns: 100px 100px 100px ; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:repeat(6,1fr) ;
+        background-color: rgb(212, 235, 235);
+    }
+    .items{
+        /* background-color: rgb(94,94,194); */
+        border:5px solid black;
+        color:rgb(32, 41, 50);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    @media(min-width: 769px){
+        .container{
+            grid-template-rows: repeat(4,1fr);
+    /* grid-template-columns: 100px 100px 100px ; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(3,1fr);
+        }
+    .header, .footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: rgb(23, 35, 31);
+        color:aliceblue;
+    }
+    .sidebar{
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .content1{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: rgb(17, 55, 55);
+        color: aliceblue;
+    }
+} 
+</style>
+<body>
+    <div class="container">
+        <div class="items header">Welcome To My Bike Station </div>
+        <div class="items sidebar"><img src="./photos/bike.jpg" height="240px" width="360px"></div>
+        <div class="items content1">Sports Bike</div>
+        <div class="items content2"><img src="./photos/bike1.jpeg" alt="" height="150px" width="350px"></div>
+        <div class="items content3"><img src="./photos/bike2.jpeg" alt="" height="150px" width="350px"></div>
+        <div class="items footer">footer</div>
+    </div>
+</body>
+</html>

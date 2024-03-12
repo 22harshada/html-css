@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+</head>
+<style>
+    *{
+        margin:0px;
+        padding: 2px;
+        border: 1px solid black;
+    }
+    .container{
+        justify-content: space-between;
+        background-color: rgb(197, 212, 212);
+    }
+    .header{
+        display:flex;
+        background-color: rgb(223, 179, 126);
+        justify-content: space-between;
+    }
+    .logo{
+        align-items: flex-start;
+        background-color: aqua;
+        height: 50px;
+        width: 50px;
+    }
+    .navbar{
+        background-color: rgb(222, 233, 72);
+        height:50px;
+        width: 70%;
+        align-self: self-end;
+    }
+    .aside{
+        align-content: flex-start;
+        background-color: pink;
+        padding: 9px;
+        height: 200px;
+        width: 100px;
+        justify-content:space-between;
+    }
+    .box{
+        background-color: gray;
+        height:50px;
+        width: 50px;
+    }
+    .gallary{
+        display:flexbox;
+        background-color: blueviolet;
+        height: 300px;
+        width: 75%;
+    }
+    .main{
+        display: flex;
+        background-color: rgb(209, 161, 161);
+        justify-content: space-around;
+    }
+    .gallaryHeader{
+        background-color:brown;
+        height:40px;
+        width: 900px;
+    }
+    img{
+        background-color: burlywood;
+        height:50px;
+        width: 100px;
+    }
+    .footer
+    {
+        background-color: chartreuse;
+        justify-content: flex-end;
+        height: 40px;
+        width:100%;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"> logo </div>
+            <div class="navbar"> navbar</div>
+        </div>
+        <br>
+    
+    <div class="main">
+        <div class="aside">
+                <div class="box"> aside</div>
+                <br>
+                <div class="btn1">button 1</div>
+                <br>
+                <div class="btn2">button 2</div>
+                <br>
+        </div>
+        <br>
+        <div class="gallary">
+            <div class="gallaryHeader"></div>
+            <br>
+            <img src="#" alt=""> 
+            <img src="#" alt=""> 
+            <img src="#" alt=""> 
+            <img src="#" alt=""> 
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        footer
+    </div>
+    </div>
+</body>
+
+</html>
